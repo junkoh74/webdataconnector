@@ -9,7 +9,7 @@
             dataType: tableau.dataTypeEnum.string
         }, {
             id: "candle_acc_trade_volume",
-	alisa: "volume",
+	alias: "volume",
             dataType: tableau.dataTypeEnum.float
         }, {
             id: "candle_date_time_kst",
@@ -51,7 +51,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-                    "market": feat[i].id,
+                    "market": feat[i].market,
                     "candle_acc_trade_volume": feat[i].properties.candle_acc_trade_volume,
                     "candle_date_time_kst": feat[i].properties.candle_date_time_kst,
                     "change_price": feat[i].properties.change_price,
