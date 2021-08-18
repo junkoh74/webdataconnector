@@ -25,14 +25,14 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://github.com/junkoh74/webdataconnector/blob/master/Examples/json/onemore.json", function(resp) {
-            var feat = resp.features,
+            var feat = resp.onemore.json,
                 tableData = [];
 
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-                    "market": onemore.json[i].market,
-                    "candle_date_time_kst": onemore.json[i].candle_date_time_kst,
+                    "market": feat[i].market,
+                    "candle_date_time_kst": feat[i].candle_date_time_kst,
                 });
             }
 
