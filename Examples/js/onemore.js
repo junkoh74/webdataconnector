@@ -22,7 +22,7 @@
     // Download the data
     myConnector.getData = function(table, doneCallback) {
         $.getJSON("https://github.com/junkoh74/webdataconnector/blob/master/Examples/json/onemore.json", function(resp) {
-            var feat = resp.onemore.json,
+            var feat = resp,
                 tableData = [];
 
             // Iterate over the JSON object
