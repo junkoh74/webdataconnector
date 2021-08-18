@@ -51,6 +51,7 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
+                    "market": feat[i].id,
                     "candle_acc_trade_volume": feat[i].properties.candle_acc_trade_volume,
                     "candle_date_time_kst": feat[i].properties.candle_date_time_kst,
                     "change_price": feat[i].properties.change_price,
