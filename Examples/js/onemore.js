@@ -4,10 +4,13 @@
 
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
-        var cols = [{
+        var cols = [ {
+            id: "market",
+            dataType: tableau.dataTypeEnum.string
+        }, {
             id: "candle_acc_trade_volume",
 	alisa: "volume",
-            dataType: tableau.dataTypeEnum.string
+            dataType: tableau.dataTypeEnum.float
         }, {
             id: "candle_date_time_kst",
             alias: "date",
