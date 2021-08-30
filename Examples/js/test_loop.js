@@ -17,7 +17,7 @@
 
         var tableSchema = {
             id: "upbit",
-            alias: "upbit 180days data",
+            alias: "upbit markets",
             columns: cols
         };
 
